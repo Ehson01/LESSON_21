@@ -445,6 +445,9 @@
   .bg-\[\#23A6F0\] {
     background-color: #23A6F0;
   }
+  .bg-\[\#252B42\] {
+    background-color: #252B42;
+  }
   .bg-\[\#B7CED9\] {
     background-color: #B7CED9;
   }
@@ -782,6 +785,9 @@
   .text-\[\#737373\] {
     color: #737373;
   }
+  .text-\[14\] {
+    color: 14;
+  }
   .text-\[20\] {
     color: 20;
   }
@@ -884,6 +890,9 @@
     }
     .lg\:flex-row {
       flex-direction: row;
+    }
+    .lg\:items-center {
+      align-items: center;
     }
     .lg\:justify-between {
       justify-content: space-between;
