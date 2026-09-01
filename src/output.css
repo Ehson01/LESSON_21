@@ -204,6 +204,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .hidden {
     display: none;
   }
@@ -252,6 +255,15 @@
   .h-screen {
     height: 100vh;
   }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
+  }
+  .w-45 {
+    width: calc(var(--spacing) * 45);
+  }
   .w-50 {
     width: calc(var(--spacing) * 50);
   }
@@ -293,6 +305,15 @@
   }
   .resize {
     resize: both;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+  .grid-rows-9 {
+    grid-template-rows: repeat(9, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -584,11 +605,17 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+  .px-1 {
+    padding-inline: var(--spacing);
+  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
   .px-9 {
     padding-inline: calc(var(--spacing) * 9);
@@ -625,6 +652,9 @@
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
@@ -709,6 +739,10 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .text-\[\#23A6F0\] {
     color: #23A6F0;
   }
@@ -758,6 +792,9 @@
     .lg\:top-10 {
       top: calc(var(--spacing) * 10);
     }
+    .lg\:block {
+      display: block;
+    }
     .lg\:flex {
       display: flex;
     }
@@ -766,6 +803,12 @@
     }
     .lg\:h-screen {
       height: 100vh;
+    }
+    .lg\:w-30 {
+      width: calc(var(--spacing) * 30);
+    }
+    .lg\:w-50 {
+      width: calc(var(--spacing) * 50);
     }
     .lg\:w-70 {
       width: calc(var(--spacing) * 70);
@@ -799,6 +842,12 @@
     }
     .lg\:max-w-300 {
       max-width: calc(var(--spacing) * 300);
+    }
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .lg\:grid-rows-3 {
+      grid-template-rows: repeat(3, minmax(0, 1fr));
     }
     .lg\:flex-row {
       flex-direction: row;
