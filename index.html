@@ -5,7 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css">
-    
+    <style>
+        .back {
+    width: 100%;
+    height: 100vh;
+    padding-top: 180px;
+    background-image: url(./img2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 500px) {
+    .back {
+        padding: 100px;
+        background-image: url(./img.jpg);
+        
+        height: auto;
+    }
+}   
+    </style>
         
     
 </head>
@@ -41,7 +60,7 @@
         </div>
     </header>
     <main class="bg-[#FAFAFA]">
-        <section class="w-full lg:h-screen h-300 lg:pt-45 pt-10 bg-[url(./img.jpg)] lg:bg-[url(/img2.png)] bg-no-repeat  lg:bg-center bg-cover">
+        <section class="back">
             <div class="max-w-100 lg:max-w-300 m-auto flex flex-col lg:flex-row justify-between items-center gap-4">
                 <div class="">
                     <h1 class="text-black font-extrabold text-[40px] lg:text-[58px] w-100 text-center lg:text-start">Meet the Best Hospital</h1><br>
